@@ -32,18 +32,58 @@
                 </nav>
                 <section class="user-panel">
                     <ul>
-                        <li class="user-search">
-                            <form action="#" method="post">
-                                <input type="search" value="Поиск">
+                        <li class="user-search-btn">
+                            <a href="#">Поиск</a>
+                            <form class="user-search-form" action="#" method="post">
+                                <input type="search" name="search" placeholder="Что ищем?">
                             </form>
                         </li>
-                        <li class="user-enter">
+                        <li class="user-enter-btn">
                             <a href="#">Вход</a>
+                            <form class="user-enter-form" action="#" method="post">
+                                <input type="text" name="email" id="user-email" placeholder="Электронная почта">
+                                <input type="password" name="password" id="user-password" placeholder="Пароль">
+                                <div class="enter">
+                                    <div class="enter-submit">
+                                        <button type="submit">Войти</button>
+                                    </div>
+                                    <div class="enter-links">
+                                        <a href="#">Забыли пароль?</a>
+                                        <a href="#">Новая регистрация</a>
+                                    </div>
+                                </div>
+                            </form>
                         </li>
-                        <li class="user-basket">
-                            <a href="#">
-                                Корзина
-                            </a>
+                        <li class="user-basket-btn">
+                            <a href="#">Пусто</a>
+                            <div class="user-basket-form" action="#">
+								<table class="basket-table">
+									<tr>
+										<td class="col-1">
+										<a href="#"><img src="/img/x.png" width="11" height="11"></a>
+										</td>
+										<td class="col-2" ><img src="img/small-ice-1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+										<td class="col-3">Пломбир с апельсиновым джемом</td>
+										<td class="col-4">1,5 кг х 200 руб.</td>
+										<td class="col-5">300 руб.</td>
+									</tr>
+									<tr>
+										<td>
+										<a href="#"><img src="/img/x.png" width="11" height="11"></a>
+										</td>
+										<td><img src="img/small-ice-2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+										<td>Клубничный пломбир с присыпкой из белого шоколада</td>
+										<td>1,5 кг х 300 руб.</td>
+										<td>450 руб.</td>
+									</tr>
+									<tr>
+										<td class="total-row" colspan="5">Итого: 750 руб.</td>
+									</tr>
+								</table>
+								<div class="table-btn">
+								<a class="btn">Оформить заказ</a>
+								</div>
+							</div>
                         </li>
                     </ul>
                     <p>
@@ -187,20 +227,23 @@
             <section class="blog-section clearfix">
                 <div class="blog-section-left">
                     <p class="blog-section-new">Новое в нашем блоге</p>
-                    <a href="#">
-                        <p class="blog-section-title">10  способов сервировки<br>
+                    
+                        <p><a class="blog-section-title" href="#">10  способов сервировки<br>
                             фруктовых щербетов к<br>
                             столу
+                            </a>
                         </p>
-                    </a>
+                    
                 </div>
-                <div class="blog-section-right">
-                    <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-                    </p>
-                    <form class="subscribe" action="#" method="post">
-                        <input type="email" name="e-mail" value="Электронная почта">
-                        <input type="submit" value="Отправить" class="subscribe-button">
-                    </form>
+                <div class="section-wrapper clearfix">
+                    <div class="blog-section-right">
+                        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+                        </p>
+                        <form class="subscribe" action="#" method="post">
+                            <input type="email" name="e-mail" placeholder="Электронная почта">
+                            <input type="submit" value="Отправить" class="subscribe-button">
+                        </form>
+                    </div>
                 </div>
             </section>
         </main>
