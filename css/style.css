@@ -81,6 +81,7 @@ body > input[type="radio"] {
     padding-right: 13px;
     padding-top: 8px;
     padding-bottom: 8px;
+    color: #ffffff;
     
 }
 
@@ -100,15 +101,24 @@ body > input[type="radio"] {
     color:#333333;
 }
 
+.active-page {
+    border-bottom: 0;
+    border-radius: 15px;
+    background-color: #d07058;
+}
 
-
+.main-navigation .active-page:hover {
+    border-bottom: 0;
+    border-radius: 15px;
+    background-color: #d07058;
+}
 
 .user-panel {
     float: right;
     width: 267px;
     color: #ffffff;
     font-size: 14px;
-    font-weight: 600
+    font-weight: 600;
     
 }
 
@@ -865,56 +875,210 @@ body > input[type="radio"] {
     margin-bottom: 3px; 
     
 }
-
+»
 .feedback > .btn {
     margin-top: 23px;
 }
 /*Catalog-page*/
 
 .breadcrumbs {
-    background-color: brown;
+    margin: 0px;
+    padding: 0px;
 }
 
 .breadcrumbs li {
     display: inline-block;
-    
+    color: #ffffff;
+    margin-right: 21px;
+}
+
+.breadcrumbs a {
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+    position: relative;
+}
+
+.breadcrumbs a:after {
+    content: "»";
+    position: absolute;
+    right: -15px;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 600;
 }
 
 .filter { 
-    background-color: crimson;
+    color: #ffffff;
+    font-size: 16px;
 }
 
 .filter-sorting {
-    background-color: #faebd7;
-    width: 193px;
-    margin-right: 16px;
+    width: 194px;
     float: left;
+    margin-bottom: 20px;
+    margin-right: 16px;
+}
+
+.filter-title {
+    font-size: 14px;
+    padding-left: 14px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.filter-sorting-control {
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 20px;
+    width: 193px;
+    color: #ffffff;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.filter-sorting select {
+    background-color: rgba(255, 255, 255, .2);
 }
 
 .filter-price {
-    background-color: #de8332;
-    width: 219px;
-    margin-right: 16px;
+    width: 220px;
+    border-radius: 20px;
     float: left;
+    margin-right: 15px;
 }
+
+.filter-price-control {
+    font-size: 14px;
+}
+
+.filter-price-control input {
+    display: inline-block;
+    width: 30px;
+    vertical-align: top;
+    background: none;
+    border: none;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+    min-width: 30px;
+    cursor: pointer;
+    
+}
+
+.filter-price-range {
+    background-color: rgba(255, 255, 255, .2);
+    position: relative;
+    width: 190px;
+    padding: 15px;
+    padding-bottom: 17px;
+    border-radius: 20px;
+}
+
+.filter-price-range .scale {
+    height: 4px;
+    background-color: rgb(248, 247, 244);
+    width: 190px;
+    opacity: 0.3
+}
+
+.filter-price-range .bar {
+    width: 120px;
+  height: 4px;
+    position: absolute;
+  background-color: #ffffff;
+    left: 35px;
+}
+
+.range-toggle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #f8f7f4;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.range-toggle-min {
+    left: 30px;
+    top: 7px;
+}
+
+.range-toggle-max {
+    left: 145px;
+    top: 7px;
+}
+
 
 .filter-fatness {
-    background-color: #faebd7;
-    width: 415px;
+    
+    
     float: left;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     
     
 }
 
+.filter-fatness-options {
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+}
+
+.filter-fatness-options label {
+    margin-right: 15px;
+}
+
+.filter-fatness-options [type="radio"] {
+    display: none;
+}
+
+.filter-fatness-options [type="radio"] + label span {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    vertical-align: top;
+    background: url("../img/radio-off.png");
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.filter-fatness-options [type="radio"]:checked + label span {
+    background: url("../img/radio-on.png");
+}
+
+
+
+
 .filter-toppings {
-    background-color: #faebd7;
     width: 702px;
     float: left;
+    margin-bottom: 20px;
 }
+
+.filter-toppings [type="checkbox"] {
+    display: none;
+}
+
+.filter-toopngs [type="checkbox"] + label span {
+    background: url("../img/checkbox-off.png");
+} 
+
+.filter-toopngs [type="checkbox"]:checked + label span {
+    
+} 
+
 
 .choice-btn {
     float: left;
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 20px;
 }
 
 .paginator {
