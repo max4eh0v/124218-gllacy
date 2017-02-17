@@ -20,14 +20,13 @@ h1 {
 
 .site-wrapper {
     background: #849d8f url("../img/slider-ice-cream-1.png") top center no-repeat ;
-     min-width: 1200px;
+    min-width: 1200px;
     transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
-.site-wrapper::before,
-.site-wrapper::after {
-  content: "";
-  visibility: hidden;
+.site-wrapper::before, .site-wrapper::after {
+    content: "";
+    visibility: hidden;
 }
 
 .site-wrapper::before {
@@ -37,8 +36,6 @@ h1 {
 .site-wrapper::after {
   background-image: url("slide-3.png");
 }
-
-
 
 .container {
     margin: 0 auto;
@@ -71,7 +68,7 @@ h1 {
 	padding: 0;
 }
 
-.main-navigation>li {
+.main-navigation > li {
 	display:inline-block;
 	position:relative;
 	margin-left:0px;
@@ -80,7 +77,7 @@ h1 {
 	vertical-align: top;
 }
 
-.main-navigation>li>a{
+.main-navigation > li >a {
 	display:inline-block;
 	font-size: 16px;
 	line-height: 18px;
@@ -90,16 +87,13 @@ h1 {
 	font-weight: 700;
 }
 
-
-
-
-.main-navigation>li>a:hover{
+.main-navigation>li>a:hover {
 	background-color: #f7f6f3;
 	color:#333333;	
 	text-decoration: none;
 }
 
-.main-navigation>li>a:active{
+.main-navigation>li>a:active {
 	background-color: #ededed;
 	color:#333333;	
 	text-decoration: none;
@@ -124,6 +118,7 @@ h1 {
 .main-navigation li li {
 	display: block;
 }
+
 .sub-menu li {
 	padding-top: 3px;
 }
@@ -135,6 +130,7 @@ h1 {
 	padding:5px 0 7px 0;
 	position:relative;
 }
+
 .sub-menu li:first-child::after {
 	content:"";
 	position:absolute;
@@ -144,6 +140,7 @@ h1 {
 	height:1px;
 	background-color: #d1d0ce;
 }
+
 .sub-menu li a {
 	display: inline-block;
 	width:100%;
@@ -155,6 +152,7 @@ h1 {
 	text-decoration:none;
 	background-color: transparent;
 }
+
 .sub-menu .active-product a {
 	background-color: #d07058;
 	color: #ffffff;
@@ -163,9 +161,11 @@ h1 {
 .sub-menu li a:hover {
 	background-color: #fbded7;
 }
+
 .sub-menu li a:active {
 	background-color: #f6b5a5;
 }
+
 .main-navigation>li:hover .sub-menu {
 	display:block;
 }
@@ -182,7 +182,6 @@ h1 {
     color: #ffffff;
     font-size: 14px;
     font-weight: 600;
-    
 }
 
 .user-panel ul {
@@ -231,7 +230,7 @@ h1 {
     
 }
 
-.user-search-form input{
+.user-search-form input {
     border: 1px solid #d3d3d2;
     border-radius: 4px;
     width: 100%;
@@ -254,7 +253,7 @@ h1 {
     position: relative;
 }
 
-.user-enter-btn > a{
+.user-enter-btn > a {
     color: #ffffff;
     text-decoration: none;
     display: inline-block;
@@ -278,7 +277,6 @@ h1 {
     background: url("../img/icon-enter.png");
     position: absolute;
     left: 15px;
-    
 }
 
 .user-enter-btn a:hover {
@@ -306,9 +304,8 @@ h1 {
 	font-size: 14px;
 	line-height: 24px;
 	color: #999999;
-    display: none;
     z-index: 10;
-    
+    display: none;
 }
 
 .user-enter-btn:hover .user-enter-form {
@@ -329,11 +326,8 @@ h1 {
 	margin-bottom: 20px;
 }
 
-.enter-submit {
+.enter button[type="submit"] {
     float: left;
-}
-
-.enter-submit button {
     display: inline-block;
     vertical-align: top;
     border: 1px solid #ef5e3f;
@@ -352,27 +346,29 @@ h1 {
     padding-right: 23px;
     padding-top: 8px;
     padding-bottom: 8px;
+    margin-right: 19px;
+    cursor: pointer;
 }
 
-.enter-submit button:hover {
+.enter button[type="submit"]:hover {
     background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
     background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
     background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
     box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
-.enter-submit button:active {
+.enter button[type="submit"]:active {
     background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
-  background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
-  background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
-  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+    background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
+    background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+    box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .enter-links {
-    float:right;
+    float: right;
 }
 
-.enter-links a{
+.enter-links a {
     display:block;
 	font-size: 13px;
 	line-height: 21px;
@@ -383,7 +379,7 @@ h1 {
     position: relative;
 }
 
-.user-basket-btn > a{
+.user-basket-btn > a {
     color: #ffffff;
     text-decoration: none;
     display: inline-block;
@@ -413,7 +409,7 @@ h1 {
     background: url("../img/icon-basket-active.png");
 }
 
-.user-basket-form{
+.user-basket-form {
     position: absolute;
     right: 0;
     top: 36px;
@@ -446,26 +442,31 @@ h1 {
 	padding-right: 10px;
 	padding-bottom: 16px;
 }
-.col-2{
+
+.col-2 {
 	padding-right: 5px;
 	padding-bottom: 16px;
 }	
-.col-3{
+
+.col-3 {
 	padding-top:8px;
 	padding-right:12px;
 	width: 230px;
 	padding-bottom: 16px;
 }	
-.col-4{
+
+.col-4 {
 	padding-top: 8px;
 	padding-right: 10px;
 	padding-bottom: 16px;
 }	
-.col-5{
+
+.col-5 {
 	padding-top: 8px;
 	padding-bottom: 16px;
 	padding-right: 10px;
 }	
+
 .total-row {
 	padding-top: 15px;
 	text-align: right;
@@ -475,18 +476,21 @@ h1 {
 	font-size: 15px;
 	line-height: 18px;
 }
+
 .table-btn {
 	text-align: right;
 	margin-bottom: 21px;
 }
+
 .table-btn .btn {
 	padding-left: 14px;
 	padding-right: 14px;
-}
-.user-basket-btn:hover .user-basket-form  {
-	display: block;
+    cursor: pointer;
 }
 
+.user-basket-btn:hover .user-basket-form {
+	display: block;
+}
 
 .user-panel p {
     float: right;
@@ -511,7 +515,6 @@ h1 {
     color: #ffffff;
     text-align: center;
     margin-bottom: 38px;
-    
 }
 
 .slide {
@@ -587,13 +590,10 @@ h1 {
     display: block;
 }
 
-
-
 #btn-1:checked ~ .site-wrapper {
     background-color: #849d8f;
     background-image: url("../img/slider-ice-cream-1.png");
 }
-
 
 #btn-2:checked ~ .site-wrapper {
   background-color: #8996a6;
@@ -610,8 +610,6 @@ h1 {
 #btn-3:checked ~ .site-wrapper label[for="btn-3"] {
     background-color: #ffffff;
 }
-
-
 
 .promo {
     margin-bottom: 40px;
@@ -667,9 +665,9 @@ h1 {
 
 .btn:active {
     background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
-  background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
-  background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
-  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+    background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
+    background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+    box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .promo-title {
@@ -685,9 +683,6 @@ h1 {
     line-height: 22px;
     margin-bottom: 45px;
 }
-
-
-
 
 .products {
 }
@@ -734,7 +729,6 @@ h1 {
 
 .item-photo img {
     border-radius: 150px;
-    
 }
 
 .hit::before {
@@ -819,7 +813,6 @@ h1 {
     float: left;
     width: 483px;
     margin-left: 57px;
-    
 }
 
 .features-post-1::before {
@@ -866,7 +859,6 @@ h1 {
     float: right;
     width: 472px;
     margin-right: 25px;
-    
 }
 
 .blog-section {
@@ -882,7 +874,6 @@ h1 {
     font-size: 16px;
     line-height: 22px;
     font-weight: 500;
-    
 }
 
 .blog-section-left {
@@ -977,12 +968,12 @@ h1 {
 
 .subscribe > input[type="submit"]:active {
     background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
-  background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
-  background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
-  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+    background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
+    background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+    box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
-.blog-section-right p{
+.blog-section-right p {
     margin-bottom: 38px;
 }
 
@@ -1002,9 +993,7 @@ h1 {
     background: url("../img/icon-ice-cream.png") no-repeat;
     content: "";
     left: 268px;
-    top: 138px;
-    
-    
+    top: 138px;    
 }
 
 .feedback {
@@ -1040,17 +1029,13 @@ h1 {
     font-weight: bold;
     margin-top: 3px;
     margin-bottom: 3px; 
-    
 }
 
 .feedback > .btn {
     margin-top: 23px;
     width: 205px; 
     text-align: center;
-    
 }
-
-
 
 .feedback-form-section {
     background-color: #f8f7f4;
@@ -1063,7 +1048,6 @@ h1 {
     padding-bottom: 25px;
     border-radius: 10px;
     display: none;
-    
 }
 
 .feedback-form-title {
@@ -1117,7 +1101,6 @@ h1 {
     width: 140px;
 }
 
-
 /*Catalog-page*/
 
 .breadcrumbs {
@@ -1126,7 +1109,6 @@ h1 {
     width: 300px;
     font-size: 14px;
     margin-top: -20px;
-    
 }
 
 .breadcrumbs li {
@@ -1170,7 +1152,6 @@ h1 {
     color: #ffffff;
     font-size: 16px;
     margin-bottom: 23px;
-    
 }
 
 .filter-sorting {
@@ -1246,9 +1227,9 @@ h1 {
 
 .filter-price-range .bar {
     width: 115px;
-  height: 4px;
+    height: 4px;
     position: absolute;
-  background-color: #ffffff;
+    background-color: #ffffff;
     left: 35px;
 }
 
@@ -1271,14 +1252,9 @@ h1 {
     top: 10px;
 }
 
-
 .filter-fatness {
-    
-    
     float: left;
-    margin-bottom: 25px;
-    
-    
+    margin-bottom: 25px;    
 }
 
 .filter-fatness-options {
@@ -1311,11 +1287,7 @@ h1 {
     background: url("../img/radio-on.png") no-repeat;
 }
 
-
-
-
 .filter-toppings {
-    
     width: 702px;
     float: left;
     margin-bottom: 20px;
@@ -1344,8 +1316,6 @@ h1 {
     margin-right: 17px;
 }
 
-
-
 .filter-toppings-options [type="checkbox"] {
     display: none;
 }
@@ -1363,7 +1333,6 @@ h1 {
 .filter-toppings [type="checkbox"]:checked + label span {
     background: url("../img/checkbox-on.png") no-repeat;
 } 
-
 
 .choice-btn {
     float: left;
@@ -1399,7 +1368,6 @@ h1 {
     width: 190px;
     list-style: none;
     color: #ffffff;
-    
 }
 
 .paginator a {
@@ -1411,8 +1379,7 @@ h1 {
     text-decoration: none;
     vertical-align: bottom;
     text-align: center;
-    padding-top: 3px
-    
+    padding-top: 3px;
 }
 
 .paginator .active {
@@ -1465,7 +1432,6 @@ h1 {
     width: 9px;
     height: 14px;
 }
-
 
 /*Footer*/
 
@@ -1549,7 +1515,7 @@ h1 {
     display: inline-block;
 }
 
-.footer-links li:nth-child(3){
+.footer-links li:nth-child(3) {
     margin-right: 42px;
 }
 
@@ -1559,7 +1525,6 @@ h1 {
     line-height: 18px;
     text-decoration: none;
     border-bottom: 1px solid rgba(255, 255, 255, .2);
-    
 }
 
 .footer-links a:hover {
@@ -1572,7 +1537,6 @@ h1 {
     margin-bottom: 2px;
     position: relative;
     font-weight: 700;
-    
 }
 
 .footer-links li:first-child::before {
@@ -1583,9 +1547,6 @@ h1 {
     background: url("../img/heart.png") no-repeat;
     left: -22px;
     top: 6px;
-}
-
-.footer-links li:nth-child(2) {
 }
 
 .footer-links li:nth-child(4) {
