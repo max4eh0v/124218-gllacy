@@ -201,6 +201,7 @@ h1 {
     background: rgba(255, 255, 255, .2) url("../img/icon-searh.png") no-repeat;
     background-position: center;
     border-radius: 50%;
+    margin-left: 7px;
     margin-right: 5px;
     margin-top: 23px;
 }
@@ -346,7 +347,7 @@ h1 {
     padding-right: 23px;
     padding-top: 8px;
     padding-bottom: 8px;
-    margin-right: 19px;
+    margin-right: 22px;
     cursor: pointer;
 }
 
@@ -383,17 +384,28 @@ h1 {
     color: #ffffff;
     text-decoration: none;
     display: inline-block;
-    width: 48px;
+    width: 58px;
     height: 24px;
     padding-top: 6px;
     padding-bottom: 2px;
-    padding-left: 45px;
-    padding-right: 34px;
+    padding-left: 40px;
+    padding-right: 17px;
     vertical-align: top;
     background: rgba(255, 255, 255, .2);
     border-radius: 20px;
     position: relative;
     margin-top: 4px;
+    margin-left: 5px;
+}
+
+.user-basket-btn > a:hover {
+    background: #f8f7f4;
+    color: #323232;
+}
+
+.user-basket-btn > .basket-full {
+    background: #f7f6f3;
+    color: #323232;
 }
 
 .user-basket-btn > a::before {
@@ -403,6 +415,10 @@ h1 {
     background: url("../img/icon-basket.png") no-repeat;
     position: absolute;
     left: 15px;
+}
+
+.user-basket-btn > .basket-full::before {
+    background: url("../img/icon-basket-active.png") no-repeat;
 }
 
 .user-basket-btn > a:hover::before {
@@ -421,7 +437,6 @@ h1 {
 	font-size: 14px;
 	line-height: 24px;
 	color: #999999;
-    display: none;
     width: 512px;
     z-index: 10;
 }
@@ -477,9 +492,12 @@ h1 {
 	line-height: 18px;
 }
 
-.table-btn {
-	text-align: right;
-	margin-bottom: 21px;
+.delete {
+    background: url(../img/x.png);
+    width: 11px;
+    height: 11px;
+    display: block;
+    margin-top: 9px;
 }
 
 .table-btn .btn {
@@ -725,10 +743,13 @@ h1 {
 
 .item-photo {
     position: relative;
+    
 }
 
 .item-photo img {
     border-radius: 150px;
+    width: 267px;
+    height: 267px;
 }
 
 .hit::before {
