@@ -508,6 +508,7 @@ h1 {
     padding-left: 1px;
     padding-right: 1px;
     width: 173px;
+    margin-bottom: 10px;
 }
 
 .user-basket-btn:hover .user-basket-form {
@@ -641,7 +642,7 @@ h1 {
 .promo-left-section {
     float: left;
     width: 520px;
-    background: url("../img/bg-raspberri.jpg") no-repeat center;
+    background: #bf3e54 url("../img/bg-raspberri.jpg") no-repeat center;
     color: #ffffff;
     padding: 20px;
     padding-top: 14px;
@@ -651,7 +652,7 @@ h1 {
 .promo-right-section {
     float: right;
     width: 520px;
-    background: url("../img/bg-chocolate.jpg") no-repeat center;
+    background: #49291c url("../img/bg-chocolate.jpg") no-repeat center;
     color: #ffffff;
     padding: 20px;
     padding-top: 14px;
@@ -1075,10 +1076,26 @@ h1 {
     display: none;
 }
 
+.feedback-form-section-show {
+    display: block;
+    animation: fly 0.6s;
+}
+
 .feedback-form-title {
     color: #323232;
     font-size: 24px;
     margin-bottom: 24px;
+    position: relative;
+}
+
+.feedback-cross {
+    position: absolute;
+    content: "";
+    background: url(../img/cross.png);
+    width: 18px;
+    height: 17px;
+    right: 15px;
+    top: 15px;
 }
 
 .feedback-form-section input[type="text"] {
@@ -1099,6 +1116,7 @@ h1 {
     padding-bottom: 12px;
     margin-bottom: 16px;
     width: 410px;
+    max-width: 410px;
     height: 127px;
     border-radius: 4px;
     border: 1px solid #d3d3d2;
@@ -1124,6 +1142,40 @@ h1 {
     border: 1px solid #f06140;
     cursor: pointer;   
     width: 140px;
+}
+
+.feedback-form > input[type="submit"]:hover {
+    background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+    background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+    background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+    box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.feedback-form > input[type="submit"]:active {
+    background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
+    background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
+    background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+    box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+/*Form-Animation*/
+
+@keyframes fly {
+    0% {
+        transform: translateY(2000px);
+    }
+    
+    70% {
+        transform: translateY(30px);
+    }
+    
+    90% {
+        transform: translateY(-10px);
+    }
+    
+    100% {
+        transform: translateY(0);
+    }
 }
 
 /*Catalog-page*/
