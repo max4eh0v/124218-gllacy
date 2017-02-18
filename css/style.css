@@ -439,6 +439,7 @@ h1 {
 	color: #999999;
     width: 512px;
     z-index: 10;
+    display: none;
 }
 
 .basket-table {
@@ -500,10 +501,13 @@ h1 {
     margin-top: 9px;
 }
 
-.table-btn .btn {
-	padding-left: 14px;
-	padding-right: 14px;
+.user-basket-form .btn {
+    border: 1px solid #ee5c3e;
     cursor: pointer;
+    font-weight: 600;
+    padding-left: 1px;
+    padding-right: 1px;
+    width: 173px;
 }
 
 .user-basket-btn:hover .user-basket-form {
