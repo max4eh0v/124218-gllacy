@@ -1031,10 +1031,7 @@ h1 {
 .google-map {
     margin-top: -62px;
     margin-left: -27px;
-    z-index: 2;
     position: relative;
-    content: ""; 
-/*    удалить content*/
 }
 
 .contacts:before {
@@ -1059,7 +1056,9 @@ h1 {
     font-size: 14px;
     line-height: 20px;
     z-index: 20;
-    position: relative;
+    position: absolute;
+    top: 40px;
+    right: 27px;
 }
 
 .feedback p {
@@ -1095,8 +1094,8 @@ h1 {
     background-color: #f8f7f4;
     width: 451px;
     position: absolute;
-    left: 300px;
-    top: 0;
+    left: -500px;
+    bottom: -100px;
     padding-left: 24px;
     padding-top: 23px;
     padding-bottom: 25px;
