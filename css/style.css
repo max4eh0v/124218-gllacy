@@ -1126,6 +1126,10 @@ h1 {
     border: 1px solid #d3d3d2;
 }
 
+.feedback-form-section input[type="text"]:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
 .feedback-form-section textarea {
     font-size: 16px;
     padding-left: 13px;
@@ -1139,7 +1143,7 @@ h1 {
     border: 1px solid #d3d3d2;
 }
 
-.feedback-form > input[type="submit"]  {
+.feedback-form > input[type="submit"] {
     color: #ffffff;
     font-size: 18px;
     font-weight: 600;
