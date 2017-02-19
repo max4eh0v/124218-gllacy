@@ -1,0 +1,1 @@
+var link=document.querySelector(".feedback > .btn"),popup=document.querySelector(".feedback-form-section"),close=popup.querySelector(".feedback-cross");link.addEventListener("click",function(e){e.preventDefault(),popup.classList.add("feedback-form-section-show")}),close.addEventListener("click",function(e){e.preventDefault(),popup.classList.remove("feedback-form-section-show")});
