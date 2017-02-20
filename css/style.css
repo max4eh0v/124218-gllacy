@@ -30,11 +30,11 @@ h1 {
 }
 
 .site-wrapper::before {
-  background-image: url("slide-2.png");
+    background-image: url("slide-2.png");
 }
 
 .site-wrapper::after {
-  background-image: url("slide-3.png");
+    background-image: url("slide-3.png");
 }
 
 .container {
@@ -79,6 +79,7 @@ h1 {
 
 .main-navigation-list > a {
 	display:inline-block;
+    vertical-align: top;
 	font-size: 16px;
 	line-height: 18px;
 	padding: 7px 12px;
@@ -199,6 +200,7 @@ h1 {
 
 .user-search-btn a {
     display: inline-block;
+    vertical-align: center;
     font-size: 0;
     width: 32px;
     height: 32px;
@@ -262,6 +264,7 @@ h1 {
     color: #ffffff;
     text-decoration: none;
     display: inline-block;
+    vertical-align: center;
     width: 48px;
     height: 24px;
     padding-top: 6px;
@@ -420,7 +423,6 @@ h1 {
     height: 20px;
     background: url("../img/sprites.png") no-repeat;
     background-position: -280px -89px;
-    
     position: absolute;
     left: 15px;
 }
@@ -459,6 +461,7 @@ h1 {
 	margin-bottom: 12px;
 	width: 100%;
 }
+
 .basket-table td {
     vertical-align: top;
 }
@@ -538,6 +541,7 @@ h1 {
 
 .user-panel li {
     display: inline-block;
+    vertical-align: center;
 }
 
 /*Index-page*/
@@ -630,13 +634,13 @@ h1 {
 }
 
 #btn-2:checked ~ .site-wrapper {
-  background-color: #8996a6;
-  background-image: url("../img/slider-ice-cream-2.png");
+    background-color: #8996a6;
+    background-image: url("../img/slider-ice-cream-2.png");
 }
 
 #btn-3:checked ~ .site-wrapper {
-  background-color: #9d8b84;
-  background-image: url("../img/slider-ice-cream-3.png");
+    background-color: #9d8b84;
+    background-image: url("../img/slider-ice-cream-3.png");
 }
 
 #btn-1:checked ~ .site-wrapper label[for="btn-1"],
@@ -803,6 +807,7 @@ h1 {
 .item-title {
     color: #ffffff;
     font-size: 16px;
+    font-weight: 500;
     line-height: 22px;
     text-decoration: none;
     border-bottom: 1px solid rgba(255,255,255,.2);
@@ -829,6 +834,7 @@ h1 {
     margin: 0;
     margin-bottom: 19px;
     padding: 0;
+    font-weight: 500;
     font-size: 24px;
     line-height: 30px;
     
@@ -839,6 +845,8 @@ h1 {
     padding: 0;
     margin-bottom: 21px;
     position: relative;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 .features p:nth-child(2) {
@@ -897,7 +905,7 @@ h1 {
 
 .features-section-right {
     float: right;
-    width: 472px;
+    width: 474px;
     margin-right: 25px;
 }
 
@@ -953,7 +961,7 @@ h1 {
     background-color: #f8f7f4;
     border-radius: 20px;
     width: 508px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 22px;
     color: #5a5a5a;
     padding-top: 31px;
@@ -963,7 +971,6 @@ h1 {
     border: 5px solid white;
     border-image-source: url("../img/post-bg.jpg");
     border-image-slice:  5;
-    font-size: 16px;font-size: 16px;
 }
 
 .subscribe > input[type="email"] {
@@ -1032,7 +1039,7 @@ h1 {
     position: relative;
 }
 
-.contacts:before {
+.contacts::before {
     position: absolute;
     width: 218px;
     height: 142px;
@@ -1237,13 +1244,13 @@ h1 {
     border-bottom: 1px solid rgba(255,188,158,.2);
 }
 
-.breadcrumbs a:after {
+.breadcrumbs a::after {
     content: "»";
     position: absolute;
     right: -15px;
 }
 
-.breadcrumbs a:hover:after {
+.breadcrumbs a:hover::after {
     color: #ffffff;
 }
 
@@ -1258,6 +1265,7 @@ h1 {
 .filter { 
     color: #ffffff;
     font-size: 16px;
+    font-weight: 500;
     margin-bottom: 23px;
 }
 
@@ -1273,6 +1281,7 @@ h1 {
     padding-left: 14px;
     display: inline-block;
     vertical-align: top;
+    font-weight: 500;
 }
 
 .filter-sorting-control {
@@ -1313,6 +1322,7 @@ h1 {
     background: none;
     border: none;
     font-size: 14px;
+    font-weight: 500;
     line-height: 18px;
     color: #ffffff;
     min-width: 30px;
@@ -1373,7 +1383,7 @@ h1 {
     background-color: rgba(255, 255, 255, .2);
     border-radius: 20px;
     padding-top: 7px;
-    padding-bottom: 7px;
+    padding-bottom: 9px;
     padding-left: 15px;
 }
 
@@ -1543,6 +1553,7 @@ h1 {
 
 .paginator-left {
     display: inline-block;
+    vertical-align: top;
     font-size: 0;
     background: url("../img/sprites.png") no-repeat;
     background-position: -56px -107px;
@@ -1556,6 +1567,7 @@ h1 {
 
 .paginator-right {
     display: inline-block;
+    vertical-align: top;
     font-size: 0;
     background: url("../img/sprites.png") no-repeat;
     background-position: -78px -108px;
@@ -1684,6 +1696,7 @@ h1 {
 
 .footer-links li {
     display: inline-block;
+    vertical-align: center;
 }
 
 .footer-links li:nth-child(3) {
